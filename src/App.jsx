@@ -1,8 +1,4 @@
-// src/App.jsx
-
-// ✅ Обязательно импортируем React, так как используем JSX
-import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 export default function App() {
   return (
@@ -43,16 +39,15 @@ export default function App() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-// Определяем стили card и button после компонента App
 const card = {
   background: 'rgba(30,41,59,0.7)',
   padding: 24,
   borderRadius: 16,
   boxShadow: '0 10px 30px rgba(0,0,0,0.4)'
-};
+}
 
 const button = {
   padding: '16px 40px',
@@ -63,4 +58,4 @@ const button = {
   background: 'linear-gradient(90deg,#22d3ee,#fb923c)',
   color: '#020617',
   fontWeight: 'bold'
-};
+}

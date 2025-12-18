@@ -1,17 +1,9 @@
-// src/main.jsx
-import React from 'react';
-import { createRoot } from 'react-dom/client'; // ✅ Импортируем createRoot
-import App from './App.jsx';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
 
-// Находим элемент root
-const rootElement = document.getElementById('root');
-
-// Создаем корень и рендерим приложение
-if (rootElement) {
-  const root = createRoot(rootElement); // ✅ Создаем корень
-  root.render( // ✅ Используем метод render у корня
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
-}
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
